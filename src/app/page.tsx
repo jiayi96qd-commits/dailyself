@@ -1,6 +1,13 @@
+import WeatherWidget from '@/components/WeatherWidget';
+
 export default function Home() {
   return (
     <section className="min-h-[80vh] flex flex-col justify-center items-center text-center px-4 animate-fade-in">
+      {/* 天气组件 - 放在页面右上角 */}
+      <div className="absolute top-4 right-4">
+        <WeatherWidget />
+      </div>
+      
       <h1 className="text-2xl sm:text-3xl md:text-4xl font-serif mb-4 leading-tight">
         在日常中，与自我温柔对话
       </h1>
